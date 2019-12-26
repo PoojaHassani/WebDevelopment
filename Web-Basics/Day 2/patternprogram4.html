@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Into-Js</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <style>
+        div {
+            width: 400px;
+            height: 350px;
+            background-color: thistle;
+        }
+    </style>
+    <script>
+        function createPattern1() {
+            var number = document.getElementById("textNumber").value;
+            var resultStr = "";
+
+            for (var i = number; i > 0; i--) {
+                var j;
+                for (j = i - 1; j >= 0; j--) {
+                    resultStr += "&nbsp&nbsp";
+                }
+
+                for (var k = 2 * number; k > 2 * i - 1; k--) {
+                    resultStr += "* ";
+                }
+                // for(var k = 0 ; k  > 2*i - 1 ; k++)
+                // {
+                //     resultStr += "* ";       Last ONE
+                // }
+
+                resultStr += "<br>";
+            }
+            document.getElementById("result").innerHTML = resultStr;
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Introduction to Javascript</h1>
+    <form name='Introduction'>
+        <label>Enter Number</label>
+        <input type='text' placeholder='Enter number' id="textNumber">
+        <input type="button" value="Check Number" onclick="createPattern1()">
+    </form>
+    <div id='result'>
+
+
+    </div>
+
+</body>
+
+</html>

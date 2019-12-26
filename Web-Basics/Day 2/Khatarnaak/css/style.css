@@ -1,0 +1,12 @@
+.tbl {
+    height: 700px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: deepskyblue;
+}
+
+.table {
+    height: 100%;
+    width: 100%;
+}

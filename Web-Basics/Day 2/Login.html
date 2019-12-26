@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Form</title>
+    <style>
+        #container {
+            background-color: palegoldenrod;
+            width: 500px;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .font {
+            font-family: 'Trebuchet MS';
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+    <script src="login.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <form id="frm" action="introjs.html" method="GET">
+            <label class="font">Enter Username</label>
+            <input type="text" id="username"><br>
+            <label class="font">Enter Password</label>
+            <input type="password" id=password><br>
+            <input type="button" value="login" onclick="validateForm()">
+        </form>
+    </div>
+</body>
+
+</html>

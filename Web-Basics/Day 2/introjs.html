@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Into-Js</title>
+    <script>
+        function checkNumber(){
+            var number = document.getElementById("textNumber").value;
+
+            if (number > 0){
+                alert("Positive");
+            }
+            else if (number < 0){
+                alert("Negative");
+            }
+            else{
+                alert("Zero");
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Introduction to Javascript</h1>
+    <form name='Introduction' target="">
+        <label>Enter Number</label>
+        <input type='text'  placeholder='Enter number' id="textNumber">
+        <input type="button" value="Check Number" onclick="checkNumber()">
+
+    </form>
+
+</body>
+</html>

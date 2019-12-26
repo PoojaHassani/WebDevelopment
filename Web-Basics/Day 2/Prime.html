@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Into-Js</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <style>
+    div{
+        width: 400px;
+        height: 350px; 
+        background-color:thistle;
+    }
+    </style>
+    <script>
+        function PrimeValues(){
+            var number = document.getElementById("textNumber").value;
+            var resultStr = new Array();
+
+            for(var i = 0 ; i <number;i++)
+            {
+                resultStr[i] = 0;                
+            }
+            for(var i = 2 ; i<resultStr.length;i++)
+            {
+                for(var j = 2*i ; j<number ; j += i)
+                {
+                    if(resultStr[j] === 0)
+                    {
+                        resultStr[j] = 1;
+                    }
+                }
+            }
+
+            var primes = "";
+            for(var i = 1 ;i<resultStr.length;i++)
+            {
+                if(resultStr[i] == 0)
+                {
+                    primes += " " + i + " ";
+                }
+            }
+
+            document.getElementById("result").innerHTML = primes;
+            
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Introduction to Javascript</h1>
+    <form name='Introduction'>
+        <label>Enter Number</label>
+        <input type='text'  placeholder='Enter number' id="textNumber">
+        <input type="button" value="Check Number" onclick="PrimeValues()">
+    </form>
+    <div  id='result'>
+        
+
+    </div>
+
+</body>
+</html>

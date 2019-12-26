@@ -1,0 +1,44 @@
+- inline css used only when overriding at max 2 properties - convention
+
+-> Javascript
+- Scripting language as good as programming language
+- validate whether appropriate data is being inserted into the form fields
+- primarily used for **client side validation**
+- to avoid any incorrect information to reach the server
+
+		Request
+	       --------->
+	Client 	          Server
+	       <---------
+		Response
+- executed on web browser only
+- F12 - open developer console of web browser
+- console.log - inbuilt object - to display the output to browser console
+- var - keyword to declare variable in javascript
+- java - statically typed programming language
+- Js 	- dynamically typed language 
+	- datatype of variable depends on the value it holds
+	- case sensitive
+	- 5 types - number
+		  - string
+		  - boolean
+		  - objects
+		  - undefined - when there is no value assigned to the variable
+	- typeof - used to check type of variable
+		 - {} simplest way to create an object
+	- clear()
+- 2 ways to include JS	- js present inside html doc
+			- outside html doc
+- retrieve value from html	- document.getElementById(<id>).value;
+				- document - represents entire html doc
+				- getElementbyId() - function of document - returns an object type
+				- value - property to get value from the id
+				- innerHTML - property to display value
+- id(#)	 - uniquely identify a control from a page
+
+form action - page to call from server on execution
+-----------------------------------------------------
+
+-document.getElementById("frm").submit(); -  to submit the form after js validation (called from js page)
+
+in CSS - [] is used to give style to all "type" attributes (Ex. Text, password)

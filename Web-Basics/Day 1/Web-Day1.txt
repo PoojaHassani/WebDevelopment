@@ -1,0 +1,74 @@
+- Open VS code from cmd in cd
+	code .
+
+- HTML	- represents data to end user
+	- for creating static web pages
+	- to be executed on web browser
+	- understood by client (browser)
+	- not a strict language
+	- user friendly
+	- <HTML></HTML>
+	- anything to be displayed is in <BODY></BODY>
+	- <HEAD></HEAD> contains javascript, document intelligence, unseen to the user
+	- not case sensitive
+	- Single Page Application (SPA)
+
+
+<!DOCTYPE html> to let the browser know that html5 is being used // not mandatory but preferred
+	- liver server comes with VSCode
+	- http://localhost:5000/home.html
+	- <h1> .. <h6> (largest to smallest)
+	- <u> - underline
+	- <center> - center align
+	- <br> - new line - self closing
+	- <i> - italics
+	- <b>,<em> - bold
+	- <hr> - horizontal line - self closing tag
+	- &nbps - white spaces 
+	- <pre></pre> - preformatted text
+	- <img 'src' attribute of img tag>
+	- singl '\' or '//' for url in html
+	- objects out of server scope will not be accessible inside the project
+	- element	- block element - consume the entire block width - heading tag - paragraph<p>
+			- inline element - img
+=================================================================================	
+- CSS	- Cascading Style Sheet
+	- to nicely present data to end user
+	- presentation logic
+	- always with HTML code
+	- 3 ways- inline CSS
+			- internal CSS
+			- external CSS
+	- case sensitive
+	- property : value
+	- background-color : specify background color
+	- font family - font
+	- color -  font color
+
+*NEVER KEEP DEFAULT BROWSER FONT FOR PROJECTS*
+	- element selector css will be applicable to all tags of that element
+	- padding - control gap between content and it's border
+	- margin - space between content border and margin
+	- border-size + border-width+border-color = border
+	- margin, padding are inheritable properties
+	- 'em' to increase size of font w.r.t parent class by a specific number - relative way to specify property values
+
+
+**Homework** (4 examples- 1 each)
+- HTML tables
+- HTML lists 	- ordered
+		- unordered
+- forms
+- new features of CSS3 and HTML5
+- create github account
+
+- starting page 'index.html'
+- <header>, <footer>, <nav>, <section>, <article>
+- margin: auto preferred to center the data
+- float - relative positioning of the tag
+- header ul li - li fields under UL which are under header
+	- display inline - arrange li elements in a line, removes bullets by default
+ padding: top right bottom left
+
+
+- SPA - central feature of angular
